@@ -1,0 +1,145 @@
+/* General Page Setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  background-color: #fff; 
+}
+
+.landing-page {
+  background-image: url('C:\Users\Kennice Gonsalves\OneDrive\Desktop\sem 5\carpool\CarPool\4.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+}
+
+/* Landing Page Header */
+.landing-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  width: 100px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Landing Page Navigation */
+.landing-nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove padding */
+  display: flex; /* Display list items in a row */
+}
+
+.landing-nav a {
+  text-decoration: none; /* Remove underline from links by default */
+  color: black; /* Set a default link color */
+  font-weight: normal; /* Normal weight for links */
+}
+
+.landing-nav a.active {
+  text-decoration: underline; /* Underline active link */
+  font-weight: bold; /* Optional: make the active link bold */
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 100px;
+}
+
+.text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.text-content h2 {
+  font-size: 48px; 
+  font-weight: bold;
+  color: #000000; 
+  margin: 0;
+  line-height: 1.2;
+}
+
+.text-content p {
+  font-size: 18px;
+  margin-top: 20px; 
+  color: #1D1D1D; 
+  margin-bottom: 40px; 
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.login-btn, .signup-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #000000; 
+}
+
+.signup-btn {
+  background-color: #000000; 
+}
+
+.login-btn:hover, .signup-btn:hover {
+  opacity: 0.9;
+}
+
+/* Image Content */
+.image-content {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 50px;
+  margin-top: 70px; 
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .main-section {
+      flex-direction: column;
+      padding: 40px 20px;
+  }
+
+  .text-content {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  .image-content img {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .buttons {
+      justify-content: center;
+  }
+}

@@ -1,0 +1,55 @@
+/* Services.css */
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 50px; /* Adjusted padding for exact positioning */
+    background-color: #ffffff; /* Match background color */
+  }
+  
+  .services-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align everything at the top */
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 50px; /* Adjust space between title and buttons */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  
+  .ride-button {
+    background-color: #00aaff;
+    color: white;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px; /* Fully rounded corners */
+    margin-bottom: 20px; /* Spacing between buttons */
+    cursor: pointer;
+    width: 200px; /* Button width */
+    height: 60px;
+    text-align: center;
+  }
+  
+  .ride-button:hover {
+    background-color: #0088cc;
+  }
+  
+  .services-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services-right img {
+    max-width: 1000px; /* Set a fixed width to control the image size */
+    height: auto;
+  }
+  

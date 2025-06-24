@@ -1,0 +1,168 @@
+/* General map styles
+nav {
+  text-align: center;
+  width : 100%;
+  display: grid;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+nav ul {
+  align-items: center;
+  padding: 6px;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  
+
+  .leaflet-routing-container {
+    z-index: 1000; 
+  }
+  
+  .leaflet-routing-line {
+    stroke: blue; 
+    opacity: 0.7;
+  }
+  
+
+  .leaflet-routing-start {
+    background: #28a745; 
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+  }
+  
+  .leaflet-routing-end {
+    background: #dc3545; 
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+  }
+  
+
+  .leaflet-marker-icon {
+    width: 25px;
+    height: 41px;
+    background-size: cover;
+    border-radius: 4px;
+  }
+  
+  .leaflet-routing-waypoint {
+    background: #007bff; 
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: relative;
+  }
+
+  .leaflet-tooltip {
+    background: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px; 
+  }
+   */
+
+/* General map styles */
+nav {
+  text-align: center;
+  width: 100%;
+  display: grid;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  align-items: center;
+  padding: 6px;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Remove flex to prevent layout issues */
+}
+
+/* Routing line style */
+.leaflet-routing-container {
+  z-index: 1000; /* Ensure routing controls are above the map */
+}
+
+.leaflet-routing-line {
+  stroke: blue; /* Color of the route line */
+  opacity: 0.7; /* Opacity for better visibility */
+  pointer-events: none; /* Ensure route line does not block map interactions */
+}
+
+/* Start and End markers */
+.leaflet-routing-start {
+  background: #28a745; /* Green color for start marker */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 1001; /* Higher z-index than map */
+}
+
+.leaflet-routing-end {
+  background: #dc3545; /* Red color for end marker */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 1001; /* Higher z-index than map */
+}
+
+/* Marker styles */
+.leaflet-marker-icon {
+  width: 25px;
+  height: 41px;
+  background-size: cover;
+  border-radius: 4px;
+  z-index: 1001; /* Make sure marker icons stay above the route */
+}
+
+.leaflet-routing-waypoint {
+  background: #007bff; /* Color for waypoints */
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 1001; /* Waypoints need to be above the map */
+}
+
+/* Tooltip styles */
+.leaflet-tooltip {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background for tooltips */
+  color: white; /* Text color */
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px; /* Font size for tooltips */
+  z-index: 1001; /* Make sure tooltips are always on top */
+}
