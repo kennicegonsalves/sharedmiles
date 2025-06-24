@@ -1,3 +1,35 @@
+# SharedMiles – Ride-Sharing Web App
+
+**SharedMiles** is a full-stack ride-sharing platform built to connect drivers and passengers for smooth, efficient, and eco-friendly commuting. Whether you're headed to college, work, or a weekend trip—SharedMiles helps users share rides, reduce travel costs, and build a community of trusted carpoolers.
+
+---
+
+## Features
+
+- **Browse Available Rides** – View a list of nearby shared rides posted by drivers
+- **Post a Ride** – Drivers can create and manage ride offers with seat info, destination, and timing
+- **Firebase Auth** – User sign-up/login with Google, email/password
+- **Protected Routes** – Only logged-in users can access core ride features
+- **Real-Time Database** – Ride listings and bookings updated live using Firebase Firestore
+- **Responsive UI** – Built in React, works smoothly on mobile & desktop
+- **Contact Driver** – Initiate booking or message driver via app
+
+---
+
+## Tech Stack
+
+| Tech            | Role                                |
+|-----------------|------------------------------------ |
+| **React.js**     | Frontend SPA UI                    |
+| **Node.js** | Backend APIs                            |
+| **Firebase Auth**| Secure authentication              |
+| **Firebase Firestore** | Real-time NoSQL database     |
+| **React Router** | Client-side routing                |
+| **JavaScript**   | Logic & interactivity              |
+| **Git + GitHub** | Version control & project hosting  |
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
